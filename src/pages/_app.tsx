@@ -8,6 +8,7 @@ import Dom from "@/components/layout/dom";
 import dynamic from "next/dynamic";
 import "@/styles/index.css";
 
+// carga dinamica del componente canvas, no ssr para inabilitar el ssr y cargar del lado del cliente
 const Canvas = dynamic(() => import("@/components/layout/canvas"), {
   ssr: false,
 });
